@@ -1,6 +1,6 @@
-# time_line_talib
+# Storage.Timeline TA-Lib processor
 
-###install
+## Installation
 ```
-pip install git+https://github.com/Illiatea/time_line_talib.git@main
+pip install git+https://github.com/pysyun/python_storage_timeline_talib.git@main
 ```
