@@ -14,7 +14,6 @@ class TaLibProcessor:
         data = time_line
         for d in data:
             i = d['value']
-            print(i)
             indicator_args.append(float(i))
 
         indicator_args = np.array(indicator_args)
