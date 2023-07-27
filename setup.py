@@ -1,7 +1,7 @@
 from setuptools import setup
 
 setup(
-    name='time_line_talib',
+    name='python_storage_timeline_talib',
     version='1.2',
     author='Illiatea',
     author_email='illiatea2@gmail.com',
