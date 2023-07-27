@@ -6,5 +6,5 @@ setup(
     author='Illiatea',
     author_email='illiatea2@gmail.com',
     install_requires=['TA-Lib'],
-    py_modules=['storage_timeline_client']
+    py_modules=[]
 )
