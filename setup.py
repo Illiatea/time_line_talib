@@ -5,5 +5,5 @@ setup(
     version='1.0',
     author='Illiatea',
     author_email='illiatea2@gmail.com',
-    install_requires=['requests', 'TA-Lib']
+    install_requires=['TA-Lib']
 )
