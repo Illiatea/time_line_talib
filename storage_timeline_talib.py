@@ -1,5 +1,5 @@
 import talib
-import numpy as np
+from numpy import array
 
 
 class TaLibProcessor:
@@ -16,7 +16,7 @@ class TaLibProcessor:
             i = d['value']
             indicator_args.append(float(i))
 
-        indicator_args = np.array(indicator_args)
+        indicator_args = array(indicator_args)
         indicator_result = indicator_func(indicator_args, timeperiod=self.period)
         result = [{'time': data[i]['time'], 'value': indicator_result[i]} for i in
                   range(len(data) - self.period + 1)]
