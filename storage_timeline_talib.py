@@ -10,14 +10,10 @@ class TaLibProcessor:
 
     def process(self, time_line):
         indicator_func = getattr(talib, self.indicator_name)
-        indicator_args = []
-        data = time_line
-        for d in data:
-            i = d['value']
-            indicator_args.append(float(i))
 
-        indicator_args = array(indicator_args)
+        indicator_args = array([float(d['value']) for d in time_line])
         indicator_result = indicator_func(indicator_args, timeperiod=self.period)
-        result = [{'time': data[i]['time'], 'value': indicator_result[i]} for i in
-                  range(len(data) - self.period + 1)]
+
+        result = [{'time': time_line[i]['time'], 'value': indicator_result[i]} for i in range(len(time_line))]
+
         return result
